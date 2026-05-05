@@ -1,0 +1,238 @@
+/* ── Careers page ── */
+
+.hpc-careers-why {
+    background: var(--bg);
+}
+
+.hpc-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.hpc-why-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--red);
+    padding: 1.5rem;
+    border-radius: 2px;
+}
+
+.hpc-why-icon {
+    font-size: 20px;
+    color: var(--red);
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+.hpc-why-card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+.hpc-why-card-body {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Open positions */
+.hpc-careers-positions {
+    background: var(--white);
+    padding: 3rem 2rem;
+}
+
+.hpc-position-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--border);
+}
+
+.hpc-position-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+    gap: 1rem;
+}
+
+.hpc-position-location {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 4px;
+}
+
+.hpc-position-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.hpc-position-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.hpc-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--navy);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 2px 8px;
+    border-radius: 2px;
+}
+
+.hpc-position-apply {
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    text-decoration: none;
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+
+.hpc-position-apply:hover {
+    color: var(--navy);
+    border-bottom-color: var(--navy);
+}
+
+.hpc-careers-contact {
+    margin-top: 1.75rem;
+    font-size: 13px;
+    color: var(--text-dim);
+}
+
+.hpc-careers-contact a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 1px;
+}
+
+/* --------------------------------------------------------- */
+
+  .careers-hero-title { font-family: 'Bebas Neue', sans-serif; font-size: 52px; line-height: 1; color: #fff; letter-spacing: 2px; margin: 0 0 1rem; }
+  .careers-hero-title span { color: #c8102e; }
+  .careers-hero-sub { font-size: 15px; color: #a0aec0; line-height: 1.6; max-width: 520px; margin: 0; }
+
+  .careers-stats {
+    background: #fff; border-bottom: 1px solid #e2e8f0;
+    display: flex; overflow-x: auto;
+  }
+  .careers-stat { padding: 1.25rem 2rem; border-right: 1px solid #e2e8f0; flex-shrink: 0; }
+  .careers-stat:last-child { border-right: none; }
+  .careers-stat-label { font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #718096; margin-bottom: 3px; }
+  .careers-stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: #0a1628; letter-spacing: 1px; line-height: 1; }
+  .careers-stat-val.red { color: #c8102e; }
+
+  .section { padding: 3rem 2rem; }
+  .section-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #c8102e; margin-bottom: 0.5rem; }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 1px; color: #0a1628; margin: 0 0 0.5rem; line-height: 1; }
+  .section-sub { font-size: 14px; color: #718096; margin: 0 0 2rem; }
+
+  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .role-card {
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 3px;
+    padding: 1.25rem 1.5rem; border-left: 4px solid #c8102e;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .role-tag {
+    display: inline-block; background: #fef2f2; color: #991b1b;
+    font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    padding: 3px 8px; border-radius: 2px; align-self: flex-start;
+  }
+  .role-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: #0a1628; letter-spacing: 1px; line-height: 1; }
+  .role-desc { font-size: 13px; color: #4a5568; line-height: 1.5; }
+  .role-locations { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+  .role-loc-dot { width: 6px; height: 6px; background: #c8102e; border-radius: 50%; flex-shrink: 0; }
+  .role-locations span { font-size: 12px; color: #718096; }
+  .role-apply {
+    margin-top: 10px; display: inline-block;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;
+    color: #c8102e; text-decoration: none; border-bottom: 1px solid #c8102e; padding-bottom: 1px;
+    align-self: flex-start;
+  }
+
+  .benefits-section { background: #0a1628; padding: 3rem 2rem; }
+  .benefits-section .section-title { color: #fff; }
+  .benefits-section .section-sub { color: #4a6080; }
+  .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .benefit-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 3px; padding: 1.25rem;
+  }
+  .benefit-icon {
+    width: 32px; height: 32px; background: rgba(200,16,46,0.2);
+    border-radius: 2px; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 10px;
+  }
+  .benefit-icon svg { width: 16px; height: 16px; fill: #f87171; }
+  .benefit-name { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 1px; color: #fff; margin-bottom: 5px; }
+  .benefit-desc { font-size: 12px; color: #718096; line-height: 1.5; }
+
+  .contact-section { background: #f4f4f2; padding: 3rem 2rem; }
+  .contact-inner {
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 3px;
+    padding: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+  }
+  .contact-left-title { font-family: 'Bebas Neue', sans-serif; font-size: 30px; color: #0a1628; letter-spacing: 1px; margin: 0 0 0.5rem; }
+  .contact-left-sub { font-size: 13px; color: #718096; line-height: 1.5; margin: 0 0 1.5rem; }
+  .contact-detail { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+  .contact-detail-icon { width: 28px; height: 28px; background: #fef2f2; border-radius: 2px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .contact-detail-icon svg { width: 13px; height: 13px; fill: #c8102e; }
+  .contact-detail-text { font-size: 13px; color: #0a1628; line-height: 1.5; }
+  .contact-detail-label { font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #718096; margin-bottom: 2px; }
+
+  .contact-form { display: flex; flex-direction: column; gap: 10px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .form-input {
+    width: 100%; padding: 9px 12px; border: 1px solid #e2e8f0; border-radius: 2px;
+    font-size: 13px; font-family: 'Source Sans 3', sans-serif; color: #1a1a1a;
+    background: #f9fafb; box-sizing: border-box; outline: none;
+  }
+  .form-input:focus { border-color: #0a1628; background: #fff; }
+  .form-select {
+    width: 100%; padding: 9px 12px; border: 1px solid #e2e8f0; border-radius: 2px;
+    font-size: 13px; font-family: 'Source Sans 3', sans-serif; color: #1a1a1a;
+    background: #f9fafb; box-sizing: border-box; outline: none; appearance: none;
+  }
+  .form-textarea {
+    width: 100%; padding: 9px 12px; border: 1px solid #e2e8f0; border-radius: 2px;
+    font-size: 13px; font-family: 'Source Sans 3', sans-serif; color: #1a1a1a;
+    background: #f9fafb; box-sizing: border-box; outline: none; resize: vertical; min-height: 90px;
+  }
+  .form-submit {
+    background: #c8102e; color: #fff; border: none; padding: 10px 22px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;
+    cursor: pointer; border-radius: 2px; align-self: flex-start;
+  }
+
+  .hpc-footer { background: #060e1a; padding: 2.5rem 2rem 1.5rem; border-top: 3px solid #c8102e; }
+  .hpc-footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+  .hpc-footer-brand { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: #fff; margin-bottom: 0.5rem; }
+  .hpc-footer-tagline { font-size: 12px; color: #4a6080; line-height: 1.5; max-width: 240px; }
+  .hpc-footer-col-title { font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #718096; margin-bottom: 0.75rem; }
+  .hpc-footer-link { display: block; font-size: 13px; color: #4a6080; text-decoration: none; margin-bottom: 6px; }
+  .hpc-footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .hpc-footer-copy { font-size: 11px; color: #2d4060; }

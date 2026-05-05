@@ -1,0 +1,94 @@
+/* ── News page ── */
+
+.hpc-news-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.hpc-news-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0;
+    border-bottom: 2px solid var(--border);
+    align-items: start;
+}
+.hpc-news-item:first-child {
+    padding-top: 0;
+}
+
+.hpc-news-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--navy);
+    color: var(--white);
+    padding: 12px 8px;
+    border-radius: 2px;
+    text-align: center;
+    flex-shrink: 0;
+}
+.hpc-news-month {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.hpc-news-day {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+.hpc-news-year {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+.hpc-news-body {
+    padding-top: 2px;
+}
+.hpc-news-source {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+}
+.hpc-news-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: var(--navy);
+    margin: 0 0 0.75rem;
+    line-height: 1.1;
+}
+.hpc-news-excerpt {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.75;
+    margin: 0 0 1rem;
+    max-width: 680px;
+}
+.hpc-news-link {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--red);
+    text-decoration: none;
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 2px;
+}
+.hpc-news-link:hover {
+    opacity: 0.75;
+}

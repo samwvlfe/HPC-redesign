@@ -1,0 +1,141 @@
+/* ── Projects page ── */
+
+.hpc-page-header {
+    background: var(--navy);
+    padding: 3rem 2rem 2.5rem;
+    position: relative;
+}
+.hpc-page-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin: 0.25rem 0 0;
+    line-height: 1;
+}
+
+.hpc-projects-list {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hpc-project-entry {
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+}
+
+.hpc-project-entry-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+}
+.hpc-project-entry-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: var(--navy);
+    margin: 0.25rem 0 0;
+    line-height: 1;
+}
+
+.hpc-project-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.hpc-project-meta {
+    margin-bottom: 1.5rem;
+    border-top: 2px solid var(--border);
+    padding-top: 1rem;
+}
+.hpc-meta-row {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+.hpc-meta-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    min-width: 80px;
+}
+.hpc-meta-value {
+    font-size: 13px;
+    color: var(--text-dim);
+}
+.hpc-meta-value--red {
+    color: var(--red);
+    font-weight: 700;
+}
+
+.hpc-project-detail-desc {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.75;
+    margin: 0;
+}
+.hpc-gallery-main {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--navy);
+    margin-bottom: 8px;
+}
+.hpc-gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.hpc-gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.hpc-gallery-thumbs img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    opacity: 0.55;
+    transition: opacity 0.15s, border-color 0.15s;
+}
+.hpc-gallery-thumbs img:hover {
+    opacity: 0.85;
+}
+.hpc-gallery-thumbs img.active {
+    border-color: var(--red);
+    opacity: 1;
+}
+
+.hpc-gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.hpc-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.hpc-dot.active {
+    background: var(--red);
+}
