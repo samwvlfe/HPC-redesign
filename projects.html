@@ -3,9 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>Project Portfolio — Hamilton Pacific Chamberlain</title>
   <link rel="stylesheet" href="/HPC-redesign/css/style.css">
   <link rel="stylesheet" href="/HPC-redesign/css/proj.css">
+  <style>
+    .proj-section { padding: 3rem 2rem 2.5rem; }
+    .proj-section--alt { background: var(--white); }
+    .proj-section--light { background: var(--bg); }
+
+    .proj-list {
+      border-top: 2px solid var(--border);
+      margin-top: 1.75rem;
+    }
+    .proj-item {
+      display: grid;
+      grid-template-columns: 1fr 170px;
+      gap: 2.5rem;
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .proj-item--active {
+      border-left: 3px solid var(--red);
+      padding-left: 1.25rem;
+      margin-left: -1.25rem;
+    }
+
+    .proj-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      letter-spacing: 1px;
+      color: var(--navy);
+      margin: 0 0 0.35rem;
+      line-height: 1.05;
+    }
+    .proj-meta-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      margin-bottom: 0.65rem;
+    }
+    .proj-location {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+    .proj-location svg { width: 12px; height: 12px; fill: var(--red); flex-shrink: 0; }
+    .proj-client {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    .proj-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.75;
+      margin: 0 0 0.75rem;
+    }
+    .proj-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .proj-tag {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: rgba(10,22,40,0.05);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+
+    .proj-right { text-align: right; }
+    .proj-status {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+    }
+    .proj-status--active { background: var(--red); color: var(--white); }
+    .proj-status--complete {
+      background: rgba(10,22,40,0.07);
+      color: var(--navy-mid);
+      border: 1px solid rgba(10,22,40,0.15);
+    }
+    .proj-value-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 3px;
+    }
+    .proj-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      letter-spacing: 1px;
+      color: var(--red);
+      line-height: 1;
+    }
+  </style>
 </head>
 <body>
   <div class="hpc-wrap">
@@ -26,210 +138,764 @@
 
     <div class="hpc-page-header">
       <div class="hpc-hero-stripe"></div>
-      <div class="hpc-section-label">Our Work</div>
-      <h1 class="hpc-page-title">Project Gallery</h1>
+      <div class="hpc-section-label" style="color: var(--red);">Past Performance</div>
+      <h1 class="hpc-page-title">Project Portfolio</h1>
     </div>
 
-    <section class="hpc-projects-list">
+    <!-- ── Active & Ongoing ── -->
+    <section class="proj-section proj-section--light">
+      <div class="hpc-section-label">Status: Active</div>
+      <div class="hpc-section-title">Active &amp; Ongoing Projects</div>
+      <div class="proj-list">
 
-      <!-- Project 1 -->
-      <div class="hpc-project-entry">
-        <div class="hpc-project-detail">
-          <div class="hpc-project-detail-left">
-            <span class="hpc-project-entry-label">VA Medical Center</span>
-            <h2 class="hpc-project-entry-title">VA Parking Garage Ramp Replacement</h2>
-            <div class="hpc-project-meta">
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Client:</span>
-                <span class="hpc-meta-value">Department of Veterans Affairs</span>
+        <div class="proj-item proj-item--active">
+          <div>
+            <h3 class="proj-title">Exterior Granite Repair Construction</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Baltimore, MD
               </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Date:</span>
-                <span class="hpc-meta-value">Completed 2024</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Location:</span>
-                <span class="hpc-meta-value">Baltimore, MD</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Value:</span>
-                <span class="hpc-meta-value hpc-meta-value--red">$9.9M</span>
-              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · Baltimore VAMC</div>
             </div>
-            <p class="hpc-project-detail-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, tenetur, vitae natus deserunt temporibus cupiditate repudiandae explicabo voluptatem delectus modi perspiciatis magnam debitis sapiente pariatur saepe, repellat qui atque vero quidem iure. Illo quisquam illum debitis? Voluptatibus sed eaque sequi fugiat beatae accusantium doloremque totam omnis molestiae eveniet at provident soluta deserunt in id debitis consequuntur suscipit molestias, eum, nam nobis ad, aliquam perferendis. Assumenda nisi dolor accusantium est earum, odio quod ipsa. Recusandae, enim? Ipsa nam sit praesentium atque!</p>
+            <p class="proj-desc">Providing new exterior sealant around penetrations to match existing mortar joints, utilizing closed-cell polyethylene foam backing rods, and repairing exterior granite across the medical center campus.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Masonry</span>
+              <span class="proj-tag">Granite Repair</span>
+              <span class="proj-tag">Exterior Sealant</span>
+              <span class="proj-tag">Historic Preservation</span>
+            </div>
           </div>
-          <div class="hpc-project-detail-right">
-            <div class="hpc-project-gallery" data-gallery="1">
-              <div class="hpc-gallery-main">
-                <img src="/HPC-redesign/Images/proj-img001.webp" alt="VA Parking Garage Ramp Replacement">
-              </div>
-              <div class="hpc-gallery-thumbs">
-                <img src="/HPC-redesign/Images/proj-img001.webp" alt="" class="active" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img002.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img003.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img004.webp" alt="" onclick="switchImg(this)">
-              </div>
-              <div class="hpc-gallery-dots">
-                <span class="hpc-dot active"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-              </div>
-            </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--active">Active</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$16,253,175</div>
           </div>
         </div>
+
+        <div class="proj-item proj-item--active">
+          <div>
+            <h3 class="proj-title">Upgrade Fire Alarm System Campus Wide</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Perry Point, MD
+              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · Perry Point VAMC</div>
+            </div>
+            <p class="proj-desc">Comprehensive design and construction task order to upgrade the campus-wide fire alarm system across the entire Perry Point VA Medical Center campus.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Fire Alarm</span>
+              <span class="proj-tag">Life Safety</span>
+              <span class="proj-tag">Campus-Wide</span>
+              <span class="proj-tag">Design-Build</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--active">Active</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$8,366,197</div>
+          </div>
+        </div>
+
+        <div class="proj-item proj-item--active">
+          <div>
+            <h3 class="proj-title">FJ Holistic Health &amp; Fitness (H2F) B2100 Renovation FY26</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Fort Jackson, SC
+              </div>
+              <div class="proj-client">US Army</div>
+            </div>
+            <p class="proj-desc">First and second-floor base bid renovations, encompassing both design and firm-fixed-price construction phases for the Holistic Health and Fitness facility.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Interior Renovation</span>
+              <span class="proj-tag">Design-Build</span>
+              <span class="proj-tag">Firm-Fixed-Price</span>
+              <span class="proj-tag">Military Facility</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--active">Active</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$6,485,898</div>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <!-- Project 2 -->
-      <div class="hpc-project-entry">
-        <div class="hpc-project-entry-header">
-          <span class="hpc-project-entry-label">National Park Service</span>
-          <h2 class="hpc-project-entry-title">Visitor Restroom Repair</h2>
-        </div>
-        <div class="hpc-project-detail">
-          <div class="hpc-project-detail-left">
-            <div class="hpc-project-meta">
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Client:</span>
-                <span class="hpc-meta-value">National Park Service</span>
+    <!-- ── Completed: Civil, Paving & Site ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="hpc-section-label">Completed · Civil, Paving &amp; Site Upgrades</div>
+      <div class="hpc-section-title">Civil, Paving &amp; Site Upgrades</div>
+      <div class="proj-list">
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Station Wide Road, Curb &amp; Drainage Reconstruction</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Danville, IL
               </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Date:</span>
-                <span class="hpc-meta-value">Ongoing</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Location:</span>
-                <span class="hpc-meta-value">Valley Forge, PA</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Value:</span>
-                <span class="hpc-meta-value hpc-meta-value--red">$99.9M</span>
-              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · VAIHCS</div>
             </div>
-            <p class="hpc-project-detail-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quo amet provident, quasi aliquam vero architecto animi corporis tempora laboriosam unde dolorum optio atque, alias eveniet maxime veritatis porro quam! Eligendi animi eius sed. Molestias, voluptatibus porro. Obcaecati quae consequatur adipisci numquam id labore beatae pariatur ut doloribus, sunt porro ipsum atque perspiciatis maiores iure eaque. Recusandae, delectus nulla nostrum possimus quam culpa. Veritatis minus perferendis praesentium culpa unde eligendi consectetur totam in, dicta quaerat ratione aliquam, atque aperiam dolorum aspernatur molestiae deserunt sit vitae non sequi dolor fuga. Sed?</p>
-          </div>
-          <div class="hpc-project-detail-right">
-            <div class="hpc-project-gallery" data-gallery="2">
-              <div class="hpc-gallery-main">
-                <img src="/HPC-redesign/Images/proj-img002.webp" alt="Visitor Restroom Repair">
-              </div>
-              <div class="hpc-gallery-thumbs">
-                <img src="/HPC-redesign/Images/proj-img002.webp" alt="" class="active" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img001.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img003.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img004.webp" alt="" onclick="switchImg(this)">
-              </div>
-              <div class="hpc-gallery-dots">
-                <span class="hpc-dot active"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-              </div>
+            <p class="proj-desc">Full road and drainage system replacement including asphalt, curb, and base course over the entire VA campus.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Civil</span>
+              <span class="proj-tag">Asphalt</span>
+              <span class="proj-tag">Drainage</span>
+              <span class="proj-tag">Road Reconstruction</span>
             </div>
           </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$4,304,933</div>
+          </div>
         </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Restripe, Seal &amp; Maintenance on Parking Garages</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Aurora, CO
+              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · Rocky Mountain Regional VAMC</div>
+            </div>
+            <p class="proj-desc">Seal coating, methacrylate treatment, re-striping, and phased garage accessibility management across 3 multi-level parking garages.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Parking Structure</span>
+              <span class="proj-tag">Seal Coat</span>
+              <span class="proj-tag">ADA</span>
+              <span class="proj-tag">Paving</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$3,470,000</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Perry Point VAMC Paving &amp; Concrete Upgrades</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Perry Point, MD
+              </div>
+              <div class="proj-client">Dept. of Veterans Affairs</div>
+            </div>
+            <p class="proj-desc">Demolition and replacement of concrete, curbs, and gutters across the Perry Point VA Medical Center campus.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Concrete</span>
+              <span class="proj-tag">Curb &amp; Gutter</span>
+              <span class="proj-tag">Demolition</span>
+              <span class="proj-tag">Paving</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$770,329</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Construct Restroom &amp; Storage Buildings</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Cheyenne, WY
+              </div>
+              <div class="proj-client">National Cemetery Administration</div>
+            </div>
+            <p class="proj-desc">Constructed a pre-manufactured double-vault restroom building with two unisex toilet rooms and a pre-storage/mechanical building. Scope included a vegetative wind screen, demolition, site preparation, erosion control, excavation, backfilling, grading, foundations, concrete walkways, utility connections, irrigation modifications, and landscaping.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Pre-Fab</span>
+              <span class="proj-tag">Site Work</span>
+              <span class="proj-tag">Utilities</span>
+              <span class="proj-tag">Landscaping</span>
+              <span class="proj-tag">Grading</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$452,904</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">New Pre-Fab Toilet Room</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Prescott, AZ
+              </div>
+              <div class="proj-client">National Cemetery Administration · Prescott National Cemetery</div>
+            </div>
+            <p class="proj-desc">Furnished labor, material, equipment, and supplies for a new pre-fab toilet room complete with sewer and water connections.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Pre-Fab</span>
+              <span class="proj-tag">Plumbing</span>
+              <span class="proj-tag">Utilities</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$427,963</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Sonny Bono Salton Sea NWR</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Salton Sea, CA
+              </div>
+              <div class="proj-client">US Fish &amp; Wildlife Service</div>
+            </div>
+            <p class="proj-desc">Heavy civil site work including asphalt milling, grading, overlay, and ADA-compliant striping for the Headquarters Public Parking Lot. Installed new conduit and a Level 2 EV charging station.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Civil</span>
+              <span class="proj-tag">Asphalt</span>
+              <span class="proj-tag">EV Charging</span>
+              <span class="proj-tag">ADA</span>
+              <span class="proj-tag">Grading</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$219,000</div>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <!-- Project 3 -->
-      <div class="hpc-project-entry">
-        <div class="hpc-project-entry-header">
-          <span class="hpc-project-entry-label">VA Medical Center</span>
-          <h2 class="hpc-project-entry-title">Community Living Center Renovation</h2>
-        </div>
-        <div class="hpc-project-detail">
-          <div class="hpc-project-detail-left">
-            <div class="hpc-project-meta">
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Client:</span>
-                <span class="hpc-meta-value">Department of Veterans Affairs</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Date:</span>
-                <span class="hpc-meta-value">Ongoing</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Location:</span>
-                <span class="hpc-meta-value">Washington, DC</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Value:</span>
-                <span class="hpc-meta-value hpc-meta-value--red">$999.9M</span>
-              </div>
+    <!-- ── Completed: Facilities & MEP ── -->
+    <section class="proj-section proj-section--light">
+      <div class="hpc-section-label">Completed · Facilities &amp; MEP Upgrades</div>
+      <div class="hpc-section-title">Facilities &amp; MEP Upgrades</div>
+      <div class="proj-list">
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">VA Community Living Center (CLC) Renovation</h3>
+            <div class="proj-meta-row">
+              <div class="proj-client">Dept. of Veterans Affairs</div>
             </div>
-            <p class="hpc-project-detail-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis voluptatem qui reiciendis perferendis eligendi rem ipsum expedita accusamus debitis, iste quisquam quibusdam vero officia exercitationem dignissimos sed tempore possimus, assumenda non laborum, nemo perspiciatis accusantium. Odit eos et error vitae soluta inventore laboriosam eum praesentium debitis repellendus atque recusandae quos amet quasi neque cum asperiores delectus ipsa voluptatum, impedit ipsam fugiat ducimus tempore nesciunt. Possimus odit adipisci doloremque, corrupti tempore nihil doloribus nulla soluta perspiciatis, sequi ipsa iusto eveniet asperiores aut! Debitis ipsum nihil blanditiis facilis ex inventore qui dolore labore ipsa, quaerat ipsam amet cupiditate doloremque perspiciatis! Doloremque.</p>
-          </div>
-          <div class="hpc-project-detail-right">
-            <div class="hpc-project-gallery" data-gallery="3">
-              <div class="hpc-gallery-main">
-                <img src="/HPC-redesign/Images/proj-img003.webp" alt="Community Living Center Renovation">
-              </div>
-              <div class="hpc-gallery-thumbs">
-                <img src="/HPC-redesign/Images/proj-img003.webp" alt="" class="active" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img001.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img002.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img004.webp" alt="" onclick="switchImg(this)">
-              </div>
-              <div class="hpc-gallery-dots">
-                <span class="hpc-dot active"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-              </div>
+            <p class="proj-desc">Renovation of occupied support areas including interior demolition, new partitions, ceilings, flooring, doors, and finishes. Also included HVAC system modifications, electrical and lighting upgrades, and fire protection modifications.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Interior Renovation</span>
+              <span class="proj-tag">HVAC</span>
+              <span class="proj-tag">Electrical</span>
+              <span class="proj-tag">Fire Protection</span>
+              <span class="proj-tag">Occupied Facility</span>
             </div>
           </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">~$9.5M</div>
+          </div>
         </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">DC – Upgrade Chillers / Cooling Towers</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Washington, DC
+              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · DC VAMC</div>
+            </div>
+            <p class="proj-desc">Upgraded existing chiller plant with a new prefabricated modular chiller plant featuring two 1,500-ton chillers and three 1,000-ton cooling tower cells.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Mechanical</span>
+              <span class="proj-tag">Chiller Plant</span>
+              <span class="proj-tag">Cooling Towers</span>
+              <span class="proj-tag">MEP</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$7,874,000</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Independence Square HVAC System Replacement</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Philadelphia, PA
+              </div>
+              <div class="proj-client">National Park Service · Independence National Historic Park</div>
+            </div>
+            <p class="proj-desc">Multi-phased mechanical infrastructure upgrade across five historically significant buildings including Independence Hall and Congress Hall. Demolished and replaced eight custom AHUs, hydronic piping pumps, and humidifiers. Integrated UV-C lamp systems and ozone-free bipolar ionization. Navigated strict historic preservation guidelines with a Historic Preservation Treatment Plan (HPTP) and relocation of 394 museum collection objects. Engineered temporary climate control with wireless, cloud-based monitoring to maintain strict 30-day downtime limits.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">HVAC</span>
+              <span class="proj-tag">Historic Preservation</span>
+              <span class="proj-tag">AHU Replacement</span>
+              <span class="proj-tag">Mechanical</span>
+              <span class="proj-tag">Multi-Phase</span>
+              <span class="proj-tag">National Historic Site</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$4,917,879</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">VA Valley Forge Administrative Renovation</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Valley Forge, PA
+              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · Valley Forge VAMC</div>
+            </div>
+            <p class="proj-desc">Interior renovation of administrative office space including demolition and reconfiguration of partitions, HVAC system extensions, LED lighting, and DataCom cabling. Included lead-based paint abatement.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Interior Renovation</span>
+              <span class="proj-tag">HVAC</span>
+              <span class="proj-tag">LED Lighting</span>
+              <span class="proj-tag">DataCom</span>
+              <span class="proj-tag">Abatement</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$3.6M</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">VA Building 6A Interior Renovation</h3>
+            <div class="proj-meta-row">
+              <div class="proj-client">Dept. of Veterans Affairs</div>
+            </div>
+            <p class="proj-desc">Interior renovation including new partitions, finishes, HVAC system modifications, electrical panel upgrades, lighting controls, fire alarm modifications, and low-voltage/DataCom infrastructure.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Interior Renovation</span>
+              <span class="proj-tag">HVAC</span>
+              <span class="proj-tag">Electrical</span>
+              <span class="proj-tag">Fire Alarm</span>
+              <span class="proj-tag">DataCom</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$2.9M</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">DC – Upgrade Domestic Water System for Legionella Prevention</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Washington, DC
+              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · DC VAMC</div>
+            </div>
+            <p class="proj-desc">Mitigated Legionella threat via balancing valves, BAS connections, heat exchanger upgrades, and removal of 1,400 aerators throughout the medical center's domestic water system.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Plumbing</span>
+              <span class="proj-tag">Water Systems</span>
+              <span class="proj-tag">Legionella Prevention</span>
+              <span class="proj-tag">BAS</span>
+              <span class="proj-tag">MEP</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$1,949,000</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Renovate IV Prep for USP 800</h3>
+            <div class="proj-meta-row">
+              <div class="proj-client">Dept. of Veterans Affairs · VA Medical Center</div>
+            </div>
+            <p class="proj-desc">Modified existing plumbing piping, installed new steam humidifiers, and added a new VAV box with a reheat coil, piping, and controls to meet USP 800 pharmaceutical compounding requirements.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Plumbing</span>
+              <span class="proj-tag">HVAC</span>
+              <span class="proj-tag">MEP</span>
+              <span class="proj-tag">Healthcare Facility</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$1,122,018</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Replace AHU 16</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Fort Bragg, NC
+              </div>
+              <div class="proj-client">US Army · Fort Bragg Army Base</div>
+            </div>
+            <p class="proj-desc">Demolition and installation of mechanical, electrical, plumbing, and control systems, including the integration of new ductwork and VAV boxes.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Mechanical</span>
+              <span class="proj-tag">HVAC</span>
+              <span class="proj-tag">AHU</span>
+              <span class="proj-tag">Electrical</span>
+              <span class="proj-tag">Military Facility</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$800,207</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Stephen T. Mather Training Center HVAC</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Harpers Ferry, WV
+              </div>
+              <div class="proj-client">National Park Service</div>
+            </div>
+            <p class="proj-desc">Complete replacement of the Administrative Building/Bunker HVAC system at the Stephen T. Mather Training Center.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">HVAC</span>
+              <span class="proj-tag">Mechanical</span>
+              <span class="proj-tag">Federal Facility</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$487,869</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Repair Fence, Security &amp; Fire Alarm</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Biloxi, MS
+              </div>
+              <div class="proj-client">National Cemetery Administration · Biloxi National Cemetery</div>
+            </div>
+            <p class="proj-desc">Replaced and repaired fencing, gate, fire alarm system, and the maintenance bay overhead garage door operator.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Fencing</span>
+              <span class="proj-tag">Fire Alarm</span>
+              <span class="proj-tag">Security</span>
+              <span class="proj-tag">Repairs</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$213,569</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Bears Bluff National Fish Hatchery</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                South Carolina
+              </div>
+              <div class="proj-client">US Fish &amp; Wildlife Service</div>
+            </div>
+            <p class="proj-desc">Specialized replacement of the electrical power feed to a critical well pump serving the hatchery facility.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Electrical</span>
+              <span class="proj-tag">Critical Systems</span>
+              <span class="proj-tag">MEP</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$82,881</div>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <!-- Project 4 -->
-      <div class="hpc-project-entry">
-        <div class="hpc-project-entry-header">
-          <span class="hpc-project-entry-label">Canteen Kitchen</span>
-          <h2 class="hpc-project-entry-title">Baltimore Canteen Kitchen Floor Sealing</h2>
-        </div>
-        <div class="hpc-project-detail">
-          <div class="hpc-project-detail-left">
-            <div class="hpc-project-meta">
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Client:</span>
-                <span class="hpc-meta-value">VA Canteen Service</span>
+    <!-- ── Completed: Building Envelope, Historical & Interior ── -->
+    <section class="proj-section proj-section--alt">
+      <div class="hpc-section-label">Completed · Building Envelope, Historical &amp; Interior Repair</div>
+      <div class="hpc-section-title">Building Envelope, Historical &amp; Interior Repair</div>
+      <div class="proj-list">
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Correct Building Envelope Site Wide</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Salem, VA
               </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Date:</span>
-                <span class="hpc-meta-value">Completed 2023</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Location:</span>
-                <span class="hpc-meta-value">Baltimore, MD</span>
-              </div>
-              <div class="hpc-meta-row">
-                <span class="hpc-meta-label">Value:</span>
-                <span class="hpc-meta-value hpc-meta-value--red">$9.9B</span>
-              </div>
+              <div class="proj-client">Dept. of Veterans Affairs · Salem VAMC</div>
             </div>
-            <p class="hpc-project-detail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, voluptatibus, architecto delectus illum consequuntur eius nulla vel alias perspiciatis officia magnam! Repudiandae nihil exercitationem maiores consequatur, aspernatur id illum, impedit reprehenderit, eum iste iusto? Sequi!</p>
-          </div>
-          <div class="hpc-project-detail-right">
-            <div class="hpc-project-gallery" data-gallery="4">
-              <div class="hpc-gallery-main">
-                <img src="/HPC-redesign/Images/proj-img004.webp" alt="Baltimore Canteen Kitchen Floor Sealing">
-              </div>
-              <div class="hpc-gallery-thumbs">
-                <img src="/HPC-redesign/Images/proj-img004.webp" alt="" class="active" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img001.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img002.webp" alt="" onclick="switchImg(this)">
-                <img src="/HPC-redesign/Images/proj-img003.webp" alt="" onclick="switchImg(this)">
-              </div>
-              <div class="hpc-gallery-dots">
-                <span class="hpc-dot active"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-                <span class="hpc-dot"></span>
-              </div>
+            <p class="proj-desc">Restoration of scuppers, roof drains, masonry tuck-pointing, metal/parapet flashing, and replacement of slate shingles, alongside lead paint and asbestos abatement.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Masonry</span>
+              <span class="proj-tag">Roofing</span>
+              <span class="proj-tag">Abatement</span>
+              <span class="proj-tag">Building Envelope</span>
+              <span class="proj-tag">Historic Preservation</span>
             </div>
           </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$2,474,340</div>
+          </div>
         </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Shenandoah National Park Headquarters</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Shenandoah, VA
+              </div>
+              <div class="proj-client">National Park Service</div>
+            </div>
+            <p class="proj-desc">Repairing a historic roof, replacing gutter systems, building a new concrete retaining wall, and replacing existing fencing with a new metal guardrail system.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Historic Roofing</span>
+              <span class="proj-tag">Masonry</span>
+              <span class="proj-tag">Structural</span>
+              <span class="proj-tag">Guardrail</span>
+              <span class="proj-tag">National Park</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$1,659,482</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Tahoe &amp; Eldorado National Forest Roof Replacements</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                California / Nevada
+              </div>
+              <div class="proj-client">USDA Forest Service</div>
+            </div>
+            <p class="proj-desc">Roof replacements for eighteen buildings across multiple districts of the Tahoe and Eldorado National Forests.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Roofing</span>
+              <span class="proj-tag">Multi-Building</span>
+              <span class="proj-tag">Federal Facility</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$1,031,819</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Montrose Park Comfort Station Rehabilitation</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Washington, DC
+              </div>
+              <div class="proj-client">National Park Service</div>
+            </div>
+            <p class="proj-desc">Multi-trade coordination including replacement of heating, ventilation, electrical, and plumbing utilities. Included slate roof rehabilitation, brick façade repointing, and ABAAS modifications to site screen walls and sidewalks.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Multi-Trade</span>
+              <span class="proj-tag">Roofing</span>
+              <span class="proj-tag">Masonry</span>
+              <span class="proj-tag">MEP</span>
+              <span class="proj-tag">ADA</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$496,233</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Edenton National Fish Hatchery</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Edenton, NC
+              </div>
+              <div class="proj-client">US Fish &amp; Wildlife Service</div>
+            </div>
+            <p class="proj-desc">Metal roofing and waterproofing replacement across the hatchery facility.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Metal Roofing</span>
+              <span class="proj-tag">Waterproofing</span>
+              <span class="proj-tag">Federal Facility</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$449,622</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Prince William Forest Park Visitor Center Restroom Rehabilitation</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Virginia
+              </div>
+              <div class="proj-client">National Park Service</div>
+            </div>
+            <p class="proj-desc">Rehabilitated and reconfigured Visitor Center restrooms into a single, unisex, ABAAS-compliant facility. Included structural shoring, extensive plumbing and electrical overhauls, and abatement of hazardous materials.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">ADA</span>
+              <span class="proj-tag">Plumbing</span>
+              <span class="proj-tag">Electrical</span>
+              <span class="proj-tag">Abatement</span>
+              <span class="proj-tag">Structural</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$197,869</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Install Fall Protection — Fort Snelling National Cemetery</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Minneapolis, MN
+              </div>
+              <div class="proj-client">National Cemetery Administration</div>
+            </div>
+            <p class="proj-desc">Installed fall protection systems for Bldg. 3001, the Material Handling Facility, and the North Pump House.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Fall Protection</span>
+              <span class="proj-tag">Safety Systems</span>
+              <span class="proj-tag">Life Safety</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$162,545</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Humboldt Bay National Wildlife Refuge</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                California
+              </div>
+              <div class="proj-client">US Fish &amp; Wildlife Service</div>
+            </div>
+            <p class="proj-desc">Metal roof and siding installation, flooring refinishing, interior painting, carpentry, and replacement of a wall furnace.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Metal Roofing</span>
+              <span class="proj-tag">Siding</span>
+              <span class="proj-tag">Interior</span>
+              <span class="proj-tag">Carpentry</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$120,156</div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div>
+            <h3 class="proj-title">Cibola National Wildlife Refuge</h3>
+            <div class="proj-meta-row">
+              <div class="proj-location">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Arizona
+              </div>
+              <div class="proj-client">US Fish &amp; Wildlife Service</div>
+            </div>
+            <p class="proj-desc">Replacing interior ceiling tiles, repairing exterior stucco and wood elements, and upgrading entry/patio doors with steel frames and ADA-compliant hardware.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Interior</span>
+              <span class="proj-tag">Exterior Repair</span>
+              <span class="proj-tag">ADA</span>
+              <span class="proj-tag">Stucco</span>
+            </div>
+          </div>
+          <div class="proj-right">
+            <div class="proj-status proj-status--complete">Completed</div>
+            <div class="proj-value-label">Contract Value</div>
+            <div class="proj-value">$119,000</div>
+          </div>
+        </div>
+
       </div>
-
     </section>
 
     <footer class="hpc-footer">
@@ -238,18 +904,18 @@
           <img class="footer-img" src="/HPC-redesign/Images/logo.jpeg" alt="Hamilton Pacific Chamberlain Logo">
         </div>
         <div>
-            <div class="hpc-footer-col-title">Navigate</div>
-            <a class="hpc-footer-link" href="/HPC-redesign/index.html">Home</a>
-            <a class="hpc-footer-link" href="/HPC-redesign/about.html">About Us</a>
+          <div class="hpc-footer-col-title">Navigate</div>
+          <a class="hpc-footer-link" href="/HPC-redesign/index.html">Home</a>
+          <a class="hpc-footer-link" href="/HPC-redesign/about.html">About Us</a>
           <a class="hpc-footer-link" href="/HPC-redesign/capabilities.html">Capabilities</a>
           <a class="hpc-footer-link" href="/HPC-redesign/projects.html">Project Gallery</a>
-            <!-- <a href="/HPC-redesign/news.html">News</a> -->
-            <!-- <a href="/HPC-redesign/career.html">Careers</a> -->
-            <!-- <a href="https://www.hpcsvcs.com/">Services ↗</a> -->
-            <div style="margin-top:20px;">
-                <div class="hpc-footer-col-title">Associate Links</div>
-                <a class="hpc-footer-link" href="https://eaccess.foundationsoft.com/Login">eAccess</a>
-            </div>
+          <!-- <a class="hpc-footer-link" href="/HPC-redesign/news.html">News</a> -->
+          <!-- <a class="hpc-footer-link" href="/HPC-redesign/career.html">Careers</a> -->
+          <!-- <a class="hpc-footer-link" href="https://www.hpcsvcs.com/">Services ↗</a> -->
+          <div style="margin-top:20px;">
+            <div class="hpc-footer-col-title">Associate Links</div>
+            <a class="hpc-footer-link" href="https://eaccess.foundationsoft.com/Login">eAccess</a>
+          </div>
         </div>
         <div>
           <div class="hpc-footer-col-title">Contact</div>
@@ -267,23 +933,5 @@
     </footer>
 
   </div>
-
-  <script>
-    function switchImg(thumb) {
-      const gallery = thumb.closest('.hpc-project-gallery');
-      const mainImg = gallery.querySelector('.hpc-gallery-main img');
-      const thumbs  = gallery.querySelectorAll('.hpc-gallery-thumbs img');
-      const dots    = gallery.querySelectorAll('.hpc-dot');
-      const idx     = Array.from(thumbs).indexOf(thumb);
-
-      mainImg.src = thumb.src;
-      mainImg.alt = thumb.alt;
-
-      thumbs.forEach(t => t.classList.remove('active'));
-      dots.forEach(d => d.classList.remove('active'));
-      thumb.classList.add('active');
-      dots[idx].classList.add('active');
-    }
-  </script>
 </body>
 </html>
