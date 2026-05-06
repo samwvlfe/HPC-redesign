@@ -369,6 +369,18 @@ body{
     text-decoration: none;
     margin-bottom: 6px;
 }
+.hpc-footer-poc{
+    display: block;
+    font-size: 14px;
+    color: var(--navy-mid);
+    margin-bottom: 6px; 
+}
+.hpc-footer-poc-info{
+    display: block;
+    font-size: 14px;
+    color: var(--navy-mid);
+    margin: 0 0 6px 10px; 
+}
 .hpc-footer-link:hover { color: var(--white); }
 
 .hpc-footer-bottom {
