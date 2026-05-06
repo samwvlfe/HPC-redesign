@@ -1,11 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Hamilton Pacific Chamberlain</title>
+  <link rel="stylesheet" href="/HPC-redesign/css/style.css">
+  <link rel="stylesheet" href="/HPC-redesign/css/proj.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 3rem;
+      align-items: start;
+      padding: 3.5rem 2rem;
+      background: var(--white);
+    }
+    .contact-info-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .contact-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+      border-radius: 2px;
+      background: var(--bg);
+    }
+    .contact-card-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(200,16,46,0.08);
+      border: 1px solid rgba(200,16,46,0.2);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-card-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--red);
+    }
+    .contact-card-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+    }
+    .contact-card-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.5;
+    }
+    .contact-card-value a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .contact-card-value a:hover {
+      color: var(--red);
+    }
+    .contact-card-sub {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+
+    /* Form */
+    .contact-form-wrap {
+      background: var(--white);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .form-field label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.65rem 0.85rem;
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--navy);
+      background: var(--bg);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--red);
+      background: var(--white);
+    }
+    .form-field textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+    .form-submit {
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      border-radius: 2px;
+      padding: 0.85rem 2rem;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: opacity 0.15s;
+    }
+    .form-submit:hover {
+      opacity: 0.88;
+    }
+    .form-note {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 0.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="hpc-wrap">
+
+    <nav class="hpc-nav">
+      <a href="/HPC-redesign/index.html" class="hpc-nav-logo">Hamilton Pacific Chamberlain</a>
+      <div class="hpc-nav-links">
+        <a href="/HPC-redesign/index.html">Home</a>
+        <a href="/HPC-redesign/about.html">About Us</a>
+        <a href="/HPC-redesign/capabilities.html">Capabilities</a>
+        <a href="/HPC-redesign/projects.html">Project Portfolio</a>
+        <a href="/HPC-redesign/projects.html" style="color: var(--red)">Contact Us</a>
+      </div>
+      <button class="hpc-nav-cta" style="background: var(--red); color: var(--white);">Contact Us</button>
+    </nav>
+
+    <div class="hpc-page-header">
+      <div class="hpc-hero-stripe"></div>
+      <div class="hpc-section-label" style="color: var(--red);">Reach Out</div>
+      <h1 class="hpc-page-title">Contact Us</h1>
+    </div>
+
+    <!-- Contact info + form -->
+    <div class="contact-grid">
+
+      <!-- Left: contact details -->
+      <div>
+        <div class="hpc-section-label">Get in Touch</div>
+        <div class="hpc-section-title" style="margin-bottom: 1.75rem;">We're Here to Help</div>
+
+        <div class="contact-info-stack">
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-card-label">Office Address</div>
+              <div class="contact-card-value">14 Irongate Drive, Suite K<br>Waldorf, MD 20602</div>
+              <div class="contact-card-sub">Waldorf, Charles County, Maryland</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-card-label">Main Phone</div>
+              <div class="contact-card-value"><a href="tel:+13016326620">(301) 632-6620</a></div>
+              <div class="contact-card-sub">General inquiries &amp; contracting</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+            </div>
+            <div>
+              <div class="contact-card-label">Office Hours</div>
+              <div class="contact-card-value">Mon – Fri · 7:30 AM – 4:00 PM</div>
+              <div class="contact-card-sub">Eastern Time · Closed federal holidays</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-card-label">Points of Contact</div>
+              <div class="contact-card-value">General Inquiries &amp; Business Development</div>
+              <div class="contact-card-sub">Reach us by phone or use the form →</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right: contact form -->
+      <div class="contact-form-wrap">
+        <div class="hpc-section-label">Send a Message</div>
+        <div class="hpc-section-title" style="margin-bottom: 1.75rem;">Request a Capabilities Brief</div>
+
+        <form class="contact-form" action="mailto:info@hpcsvcs.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="First Name" placeholder="Jane" required>
+            </div>
+            <div class="form-field">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="Last Name" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="Email" placeholder="jane@agency.gov" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="Phone" placeholder="(555) 000-0000">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="org">Organization / Agency</label>
+            <input type="text" id="org" name="Organization" placeholder="Department of Veterans Affairs">
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <select id="subject" name="Subject">
+              <option value="">Select a topic...</option>
+              <option>Capabilities Brief Request</option>
+              <option>Active Contract Inquiry</option>
+              <option>Subcontracting Opportunities</option>
+              <option>General Question</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" placeholder="Tell us about your project or question..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Send Message</button>
+          <p class="form-note">Submitting will open your default email client pre-addressed to our team. We typically respond within one business day.</p>
+        </form>
+      </div>
+
+    </div>
+
+    <footer class="hpc-footer">
+      <div class="hpc-footer-grid">
+        <div>
+          <img class="footer-img" src="/HPC-redesign/Images/logo.jpeg" alt="Hamilton Pacific Chamberlain Logo">
+        </div>
+        <div>
+          <div class="hpc-footer-col-title">Navigate</div>
+          <a class="hpc-footer-link" href="/HPC-redesign/index.html">Home</a>
+          <a class="hpc-footer-link" href="/HPC-redesign/about.html">About Us</a>
+          <a class="hpc-footer-link" href="/HPC-redesign/capabilities.html">Capabilities</a>
+          <a class="hpc-footer-link" href="/HPC-redesign/projects.html">Project Portfolio</a>
+            <a class="hpc-footer-link" href="/HPC-redesign/contact.html">Contact Us</a>
+          <div style="margin-top:20px;">
+            <div class="hpc-footer-col-title">Associate Links</div>
+            <a class="hpc-footer-link" href="https://eaccess.foundationsoft.com/Login">eAccess</a>
+          </div>
+        </div>
+        <div>
+          <div class="hpc-footer-col-title">Contact</div>
+          <a class="hpc-footer-link" href="#">14 Irongate Drive, Suite K Waldorf, MD 20602</a>
+          <a class="hpc-footer-link" href="tel:+13016326620">(301) 632-6620</a>
+          <div style="margin-top:20px;">
+            <div class="hpc-footer-col-title">Hours</div>
+            <div class="hpc-footer-link">Mon – Fri · 7:30AM – 4:00PM</div>
+          </div>
+        </div>
+      </div>
+      <div class="hpc-footer-bottom">
+        <div class="hpc-footer-copy">© 2026 Hamilton Pacific Chamberlain · All rights reserved</div>
+        <div class="hpc-footer-licenses">Aggregate: $25M · Single: $40M · FCL Cleared · SDVOSB Certified</div>
+      </div>
+    </footer>
+
+  </div>
 </body>
 </html>
