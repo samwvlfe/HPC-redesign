@@ -359,20 +359,20 @@ body{
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--white);
     margin-bottom: 0.75rem;
 }
 .hpc-footer-link {
     display: block;
     font-size: 14px;
-    color: var(--navy-mid);
+    color: var(--text-muted);
     text-decoration: none;
     margin-bottom: 6px;
 }
 .hpc-footer-poc{
     display: block;
     font-size: 14px;
-    color: var(--navy-mid);
+    color: var(--text-muted);
     margin-bottom: 6px; 
 }
 .hpc-footer-poc-info{
