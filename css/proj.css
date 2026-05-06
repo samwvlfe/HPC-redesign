@@ -1,7 +1,7 @@
 /* ── Projects page ── */
 
 .hpc-page-header {
-    background: linear-gradient(45deg, var(--navy) 0%, var(--navy) 770px, var(--navy-dark) 770px);
+    background: linear-gradient(45deg, var(--navy) 0%, var(--navy) 550px, var(--navy-dark) 550px);
     padding: 3rem 2rem 2.5rem;
     position: relative;
 }
