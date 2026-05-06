@@ -89,7 +89,14 @@ body{
 .hpc-hero-inner {
     max-width: 900px;
 }
-
+.hpc-hero-badges {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
 .hpc-hero-badge {
     display: inline-flex;
     align-items: center;
@@ -103,7 +110,6 @@ body{
     text-transform: uppercase;
     padding: 4px 10px;
     border-radius: 2px;
-    margin-bottom: 1.25rem;
 }
 .hpc-hero-title {
     font-family: 'Bebas Neue', sans-serif;
@@ -115,6 +121,7 @@ body{
 }
 .hpc-hero-title span {
     color: var(--red);
+    font-size: 80px;
 }
 .hpc-hero-sub {
     font-size: 18px;
@@ -382,13 +389,6 @@ body{
     color: var(--text-muted);
 }
 
-/* ── Hero badge row ── */
-.hpc-hero-badges {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 8px;
-}
 
 /* ── Why Choose HPC ── */
 .hpc-why-grid {
