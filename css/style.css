@@ -380,3 +380,78 @@ body{
     font-size: 11px;
     color: var(--text-muted);
 }
+
+/* ── Hero badge row ── */
+.hpc-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.25rem;
+}
+
+/* ── Why Choose HPC ── */
+.hpc-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+.hpc-why-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 3px;
+    padding: 1.5rem;
+}
+.hpc-why-icon {
+    font-size: 24px;
+    margin-bottom: 0.75rem;
+}
+.hpc-why-card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+.hpc-why-card-body {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+.hpc-why-card-body strong {
+    color: var(--white);
+}
+
+/* EMR score table inside Why card */
+.hpc-emr-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 1rem;
+}
+.hpc-emr-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 2px;
+    padding: 8px 6px;
+    text-align: center;
+}
+.hpc-emr-year {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+}
+.hpc-emr-score {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--white);
+    line-height: 1;
+}
+.hpc-emr-score.red {
+    color: var(--red);
+}
