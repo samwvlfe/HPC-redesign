@@ -38,8 +38,8 @@ body{
     top: 0;
     z-index: 100;
 }
-.hpc-nav-logo {
-    width: 300px;
+.hpc-nav-logo img{
+    width: 150px;
     height: auto;
 }
 .hpc-nav-links {
