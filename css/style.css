@@ -39,11 +39,8 @@ body{
     z-index: 100;
 }
 .hpc-nav-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-    color: var(--white);
-    letter-spacing: 2px;
-    text-decoration: none;
+    width: 300px;
+    height: auto;
 }
 .hpc-nav-links {
     display: flex;
